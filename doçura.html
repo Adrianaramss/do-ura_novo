@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doçura & Cia • Loja de Doces</title>
+  <meta name="description" content="Doces artesanais em Olinda e Recife: brigadeiros, cupcakes, bolo no pote e muito mais. Peça pelo WhatsApp!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial","Noto Sans","sans-serif"] },
+          colors: { candy: { 50:"#fff1f2",100:"#ffe4e6",500:"#ec4899",600:"#db2777" } }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .card-hover{transition:box-shadow .25s, transform .25s}
+    .card-hover:hover{box-shadow:0 15px 35px rgba(16,24,40,.08); transform:translateY(-2px)}
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-gradient-to-b from-rose-50 via-white to-amber-50">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-candy-600 text-xl">🍬</span>
+        <span class="font-extrabold tracking-tight text-lg">Doçura & Cia</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#cardapio" class="hover:text-candy-600">Cardápio</a>
+        <a href="#sobre" class="hover:text-candy-600">Sobre</a>
+        <a href="#avaliacoes" class="hover:text-candy-600">Avaliações</a>
+        <a href="#contato" class="hover:text-candy-600">Contato</a>
+      </nav>
+      <a target="_blank" rel="noreferrer" href="https://wa.me/5599999999999?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." class="inline-flex items-center gap-2 rounded-xl bg-candy-600 hover:bg-candy-500 text-white px-4 py-2">
+        <span>🛍️</span><span>Pedir no WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div aria-hidden class="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-rose-200 blur-3xl opacity-70"></div>
+    <div aria-hidden class="absolute top-40 -left-20 h-72 w-72 rounded-full bg-amber-200 blur-3xl opacity-70"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+          Doces artesanais que derretem <span class="text-candy-600">no coração</span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-xl">
+          Sabor de infância em cada mordida: ingredientes selecionados, produção diária e muito carinho.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#cardapio" class="inline-flex items-center gap-2 rounded-xl bg-gray-900 hover:bg-black text-white px-4 py-2">
+            <span>Ver Cardápio</span><span>➡️</span>
+          </a>
+          <a href="#sobre" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-white">Conheça nossa história</a>
+        </div>
+        <div class="mt-8 flex items-center gap-1 text-amber-500">
+          <span class="text-lg">⭐</span><span class="text-lg">⭐</span><span class="text-lg">⭐</span><span class="text-lg">⭐</span><span class="text-lg">⭐</span>
+          <span class="ml-2 text-sm text-gray-600">Avaliação média 4.9/5 por nossos clientes</span>
+        </div>
+      </div>
+
+      <!-- Grade de imagens (placeholders) -->
+      <div>
+        <div class="relative aspect-square w-full max-w-md mx-auto">
+          <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-rose-200 via-rose-100 to-amber-100 shadow-2xl"></div>
+          <div class="absolute inset-4 rounded-3xl bg-[radial-gradient(circle_at_30%_20%,#fff,transparent_60%)]"></div>
+          <div class="absolute inset-6 grid grid-cols-3 gap-3">
+            <img src="src/caixa_de_brigadeiro_gourmet.jpg" alt="Brigadeiro Gourmet" class="rounded-2xl object-cover w-full h-full shadow" loading="lazy" width="400" height="400">
+            <img src="src/beijinho-de-coco.png"  alt="Beijinho de Coco" class="rounded-2xl object-cover w-full h-full shadow" loading="lazy" width="400" height="400">
+            <img src="/src/morango.jpg"    alt="Morango do amor" class="rounded-2xl object-cover w-full h-full shadow" loading="lazy" width="400" height="400">
+             <img src="src/bolo de pode.jpg"  alt="bolo de pote" class="rounded-2xl object-cover w-full h-full shadow" loading="lazy" width="400" height="400">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="py-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-4">
+      <div class="bg-white/80 rounded-2xl p-6 card-hover">
+        <div class="flex items-center gap-2 font-semibold">⏰ Produção diária</div>
+        <p class="text-sm text-gray-600 mt-2">Fresquinhos todos os dias para garantir textura e sabor perfeitos.</p>
+      </div>
+      <div class="bg-white/80 rounded-2xl p-6 card-hover">
+        <div class="flex items-center gap-2 font-semibold">⭐ Ingredientes premium</div>
+        <p class="text-sm text-gray-600 mt-2">Usamos chocolate nobre e insumos selecionados de primeira.</p>
+      </div>
+      <div class="bg-white/80 rounded-2xl p-6 card-hover">
+        <div class="flex items-center gap-2 font-semibold">🎁 Eventos & kits</div>
+        <p class="text-sm text-gray-600 mt-2">Caixas presenteáveis e buffets de mesa doce para o seu evento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section id="cardapio" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="inline-block rounded-full bg-pink-100/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-candy-600">Cardápio</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">Nossas delícias</h2>
+        <p class="mt-3 text-gray-600 max-w-2xl mx-auto">Escolha seus favoritos e finalize pelo WhatsApp.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 card-hover">
+          <img src="src/caixa_de_brigadeiro_gourmet.jpg" alt="Brigadeiro Gourmet" class="w-full h-44 object-cover rounded-xl mb-4" loading="lazy" width="1200" height="500">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Brigadeiro Gourmet</h3>
+            <span class="rounded-full bg-pink-100 text-candy-600 text-xs font-semibold px-2 py-0.5">Mais pedido</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 min-h-[48px]">Clássico com chocolate belga e granulado crocante.</p>
+          
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 card-hover">
+          <img src="src/beijinho-de-coco.png" alt="Beijinho de Coco" class="w-full h-44 object-cover rounded-xl mb-4" loading="lazy" width="1200" height="500">
+          <h3 class="text-lg font-semibold">Beijinho de Coco</h3>
+          <p class="text-sm text-gray-600 mt-2 min-h-[48px]">Cremoso com coco fresco e toque de cravo.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xl font-extrabold text-gray-900">R$ 3,50</span>
+            <a target="_blank" rel="noreferrer" href="https://wa.me/5599999999999?text=Ol%C3%A1!%20Quero%20*Beijinho%20de%20Coco*%20(R$%203,50)." class="rounded-xl bg-candy-600 hover:bg-candy-500 text-white px-4 py-2">Pedir</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 card-hover">
+          <img src="src/bolo de pode.jpg" alt="Bolo no Pote" class="w-full h-44 object-cover rounded-xl mb-4" loading="lazy" width="1200" height="500">
+          <h3 class="text-lg font-semibold">Bolo no Pote</h3>
+          <p class="text-sm text-gray-600 mt-2 min-h-[48px]">Camadas de bolo de chocolate com creme de ninho.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xl font-extrabold text-gray-900">R$ 12,90</span>
+            <a target="_blank" rel="noreferrer" href="https://wa.me/5599999999999?text=Ol%C3%A1!%20Quero%20*Bolo%20no%20Pote*%20(R$%2012,90)." class="rounded-xl bg-candy-600 hover:bg-candy-500 text-white px-4 py-2">Pedir</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 card-hover">
+          <img src="src/morango.jpg" alt="Morango do amor" class="w-full h-44 object-cover rounded-xl mb-4" loading="lazy" width="1200" height="500">
+          <h3 class="text-lg font-semibold">Morango do amor</h3>
+          <p class="text-sm text-gray-600 mt-2 min-h-[48px]">Famoso morango do amor delicioso e crocante</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xl font-extrabold text-gray-900">R$ 15,90</span>
+            <a target="_blank" rel="noreferrer" href="https://wa.me/5599999999999?text=Ol%C3%A1!%20Quero%20*Palha%20Italiana*%20(R$%206,90)." class="rounded-xl bg-candy-600 hover:bg-candy-500 text-white px-4 py-2">Pedir</a>
+          </div>
+        </div>
+
+        
+
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-16 bg-white/70">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 text-gray-700">
+        <div class="text-center lg:text-left">
+          <p class="inline-block rounded-full bg-pink-100/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-candy-600">Sobre</p>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">Feito à mão em Olinda</h2>
+          <p class="mt-3 text-gray-600">Começamos na cozinha de casa e hoje adoçamos eventos por todo o Grande Recife.</p>
+        </div>
+        <p>Na Doçura & Cia, acreditamos que doce bom é doce com história. Cada receita foi testada e aperfeiçoada para chegar até você com o máximo de sabor.</p>
+        <p>Trabalhamos com lotes pequenos, ingredientes selecionados e atendimento próximo para personalizar o que você precisa: caixinhas, lembrancinhas e mesas de doces completas.</p>
+        <div class="flex gap-3">
+          <a href="#contato" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-white">Falar com a gente</a>
+          <a href="#avaliacoes" class="inline-flex items-center gap-2 rounded-xl bg-gray-900 hover:bg-black text-white px-4 py-2">Ver avaliações</a>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section id="avaliacoes" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <p class="inline-block rounded-full bg-pink-100/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-candy-600">Avaliações</p>
+      <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">Amor em cada mordida</h2>
+      <p class="mt-3 text-gray-600 max-w-2xl mx-auto">O que os clientes dizem</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        <div class="bg-white/80 rounded-2xl p-6 card-hover text-left">
+          <div class="mb-2 text-amber-500">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700">“Os melhores brigadeiros! Chegaram quentinhos e fresquinhos.”</p>
+          <p class="mt-3 text-sm text-gray-500">— Marina S.</p>
+        </div>
+        <div class="bg-white/80 rounded-2xl p-6 card-hover text-left">
+          <div class="mb-2 text-amber-500">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700">“Atendimento nota 10”</p>
+          <p class="mt-3 text-sm text-gray-500">— Pedro.</p>
+        </div>
+        <div class="bg-white/80 rounded-2xl p-6 card-hover text-left">
+          <div class="mb-2 text-amber-500">⭐⭐⭐⭐⭐</div>
+          <p class="text-gray-700">“Comprei pro aniversário e foi sucesso total!”</p>
+          <p class="mt-3 text-sm text-gray-500">— Marcela.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-r from-candy-600 to-pink-500 p-8 sm:p-12 text-white shadow-2xl grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold">Quer um orçamento para o seu evento?</h3>
+          <p class="mt-2 text-white/90">Montamos kits personalizados para aniversários, casamentos e eventos corporativos.</p>
+        </div>
+        <div class="flex justify-start lg:justify-end gap-3">
+          <a href="#contato" class="inline-flex items-center gap-2 rounded-xl border border-white/30 px-4 py-2 hover:bg-white/10">Falar agora</a>
+          <a target="_blank" rel="noreferrer" href="https://wa.me/5599999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20evento." class="inline-flex items-center gap-2 rounded-xl bg-gray-900 hover:bg-black px-4 py-2">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-16 bg-white/70">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
+      <div class="text-center lg:text-left">
+        <p class="inline-block rounded-full bg-pink-100/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-candy-600">Contato</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight">Fale com a Doçura & Cia</h2>
+        <p class="mt-3 text-gray-600">Tire dúvidas, peça orçamento ou faça seu pedido.</p>
+        <form class="space-y-3 bg-white p-6 rounded-2xl shadow mt-6" onsubmit="return false;">
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input class="w-full rounded-xl border px-3 py-2" placeholder="Seu nome" required>
+            <input class="w-full rounded-xl border px-3 py-2" placeholder="Seu e-mail" type="email" required>
+          </div>
+          <input class="w-full rounded-xl border px-3 py-2" placeholder="Assunto (ex.: Orçamento para festa)">
+          <textarea class="w-full rounded-xl border px-3 py-2 min-h-[140px]" placeholder="Mensagem"></textarea>
+          <button type="button" class="w-full rounded-xl bg-candy-600 hover:bg-candy-500 text-white px-4 py-2"
+                  onclick="window.open('https://wa.me/5599999999999?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Do%C3%A7ura%20%26%20Cia.','_blank')">
+            Enviar mensagem
+          </button>
+          <p class="text-xs text-gray-500">* Formulário ilustrativo. Para resposta imediata, fale no WhatsApp.</p>
+        </form>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white/80 rounded-2xl p-6">
+          <p class="text-sm text-gray-600">Atendemos Olinda, Recife e região. Retirada no ateliê ou delivery sob consulta.</p>
+          <p class="mt-2 text-sm text-gray-600">Horário: seg–sáb, 9h às 18h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="py-10 border-t bg-white/60">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© <span id="ano"></span> Doçura & Cia. Todos os direitos reservados.</p>
+      <div class="text-xs text-gray-500">
+        Feito com ❤ em Olinda • <a href="https://wa.me/5599999999999" target="_blank" rel="noreferrer" class="underline">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
